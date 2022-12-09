@@ -1,4 +1,4 @@
-package com.example.hospitalreview;
+package com.example.hospitalreview.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

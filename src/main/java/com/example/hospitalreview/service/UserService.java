@@ -1,9 +1,9 @@
 package com.example.hospitalreview.service;
 
 
-import com.example.hospitalreview.User;
-import com.example.hospitalreview.dto.UserDto;
-import com.example.hospitalreview.dto.UserJoinRequest;
+import com.example.hospitalreview.domain.entity.User;
+import com.example.hospitalreview.domain.dto.UserDto;
+import com.example.hospitalreview.domain.dto.UserJoinRequest;
 import com.example.hospitalreview.exception.ErrorCode;
 import com.example.hospitalreview.exception.HospitalReviewAppException;
 import lombok.RequiredArgsConstructor;
@@ -19,9 +19,6 @@ public class UserService {
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder encoder;
 
-    @Value("${jwt.token.secret}")
-    private String secretKey;
-    private long expireTimeMs = 1000 * 60 * 60; // 1시간
 
     public UserDto join(UserJoinRequest request) {
         // 비즈니스 로직 - 회원 가입

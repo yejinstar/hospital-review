@@ -1,6 +1,6 @@
 package com.example.hospitalreview.repository;
 
-import com.example.hospitalreview.User;
+import com.example.hospitalreview.domain.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,7 +1,7 @@
 package com.example.hospitalreview.controller;
 
-import com.example.hospitalreview.dto.UserDto;
-import com.example.hospitalreview.dto.UserJoinRequest;
+import com.example.hospitalreview.domain.dto.UserDto;
+import com.example.hospitalreview.domain.dto.UserJoinRequest;
 import com.example.hospitalreview.exception.ErrorCode;
 import com.example.hospitalreview.exception.HospitalReviewAppException;
 import com.example.hospitalreview.service.UserService;

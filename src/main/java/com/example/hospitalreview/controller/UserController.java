@@ -1,9 +1,9 @@
 package com.example.hospitalreview.controller;
 
-import com.example.hospitalreview.Response;
-import com.example.hospitalreview.dto.UserDto;
-import com.example.hospitalreview.dto.UserJoinRequest;
-import com.example.hospitalreview.dto.UserJoinResponse;
+import com.example.hospitalreview.domain.Response;
+import com.example.hospitalreview.domain.dto.UserDto;
+import com.example.hospitalreview.domain.dto.UserJoinRequest;
+import com.example.hospitalreview.domain.dto.UserJoinResponse;
 import com.example.hospitalreview.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,7 @@
-package com.example.hospitalreview.dto;
+package com.example.hospitalreview.domain.dto;
 
 
-import com.example.hospitalreview.User;
+import com.example.hospitalreview.domain.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
