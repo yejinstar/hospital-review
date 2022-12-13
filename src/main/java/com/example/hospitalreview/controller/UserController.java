@@ -23,6 +23,7 @@ public class UserController {
     @PostMapping("/join")
     public Response<UserJoinResponse> Join(@RequestBody UserJoinRequest userJoinRequest){
         log.info("join으로 요청이 들어왔습니다.");
+        log.info("join 과정 진행합니다.");
         UserDto userDto = userService.join(userJoinRequest);
         return Response.suceess(new UserJoinResponse(userDto.getUserName(), userDto.getEmail()));
     }
