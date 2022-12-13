@@ -25,6 +25,7 @@ public class UserController {
         log.info("join으로 요청이 들어왔습니다.");
         log.info("join 과정 진행합니다.");
         UserDto userDto = userService.join(userJoinRequest);
+        log.info("service 연결 완료");
         return Response.suceess(new UserJoinResponse(userDto.getUserName(), userDto.getEmail()));
     }
 }
