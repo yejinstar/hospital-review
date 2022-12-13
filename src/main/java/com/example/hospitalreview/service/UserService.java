@@ -26,6 +26,7 @@ public class UserService {
         // 회원 userName(id) 중복 Check
 
         // 중복이면 회원가입 x --> Exception(예외)발생
+
         // 있으면 에러처리
         userRepository.findByUserName(request.getUserName())
                 .ifPresent(user ->{
