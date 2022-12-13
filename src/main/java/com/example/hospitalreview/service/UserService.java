@@ -21,6 +21,7 @@ public class UserService {
 
 
     public UserDto join(UserJoinRequest request) {
+
         // 비즈니스 로직 - 회원 가입
         // 회원 userName(id) 중복 Check
         // 중복이면 회원가입 x --> Exception(예외)발생
